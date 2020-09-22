@@ -1,3 +1,16 @@
+*.pyc
+*.pyo
+*.pylintrc
+
+*.db
+
+**/static/uploaded/
+.DS_Store
+
+.vscode/*
+*.vscode
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

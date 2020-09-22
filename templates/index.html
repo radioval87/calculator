@@ -1,0 +1,47 @@
+<!-- templates/index.html -->
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <script type="text/javascript" src="static/main.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img src="static/Braun.jpg" alt="Calculator" usemap="#calcmap" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+        
+        <map name="calcmap">
+            <area shape="circle" id="on" coords="300,335,15" alt="power on" onclick="power(1)">
+            <area shape="circle" id="off" coords="380,335,15" alt="power off" onclick="power(0)">
+            <area shape="circle" id="reset" coords="303,768,27" alt="reset" onclick="wipe()">
+            <area shape="circle" id="0" coords="380,768,27" alt="zero" onclick="Bfunction(0)">
+            <area shape="circle" id="dot" coords="457,768,27" alt="dot" onclick="dotFunction()">
+            <area shape="circle" id="equals" coords="534,768,27" alt="equals" onclick="equals()">
+            <area shape="circle" id="plus" coords="611,768,27" alt="plus" onclick="calcFunction('+')">
+            <area shape="circle" id="NA0" coords="303,690,27" alt="Not Available">
+            <area shape="circle" id="1" coords="380,690,27" alt="one" onclick="Bfunction(1)">
+            <area shape="circle" id="2" coords="457,690,27" alt="two" onclick="Bfunction(2)">
+            <area shape="circle" id="3" coords="534,690,27" alt="three" onclick="Bfunction(3)">
+            <area shape="circle" id="minus" coords="611,690,27" alt="minus" onclick="calcFunction('-')">
+            <area shape="circle" id="SQRT" coords="303,612,27" alt="square root">
+            <area shape="circle" id="4" coords="380,612,27" alt="four" onclick="Bfunction(4)">
+            <area shape="circle" id="5" coords="457,612,27" alt="five" onclick="Bfunction(5)">
+            <area shape="circle" id="6" coords="534,612,27" alt="six" onclick="Bfunction(6)">
+            <area shape="circle" id="mult" coords="611,612,27" alt="multiply" onclick="calcFunction('*')">
+            <area shape="circle" id="NA1" coords="303,534,27" alt="Not Available">
+            <area shape="circle" id="7" coords="380,534,27" alt="seven" onclick="Bfunction(7)">
+            <area shape="circle" id="8" coords="457,534,27" alt="eight" onclick="Bfunction(8)">
+            <area shape="circle" id="9" coords="534,534,27" alt="nine" onclick="Bfunction(9)">
+            <area shape="circle" id="div" coords="611,534,27" alt="divide" onclick="calcFunction('/')">
+            <area shape="circle" id="NA2" coords="303,456,27" alt="Not Available">
+            <area shape="circle" id="NA3" coords="380,456,27" alt="Not Available">
+            <area shape="circle" id="NA4" coords="457,456,27" alt="Not Available">
+            <area shape="circle" id="NA5" coords="534,456,27" alt="Not Available">
+            <area shape="circle" id="alter" coords="611,456,27" alt="alternate">
+        </map>
+        
+        <form id="display" action="" method="post">
+            <input  type="text" name="screen" id="screen" readonly>
+        </form>
+        
+    </body>
+</html>
